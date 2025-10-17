@@ -1,0 +1,10 @@
+# Librerías para procesamiento de datos y ML
+pandas
+scikit-learn
+numpy
+
+# Librería para cargar variables de entorno
+python-dotenv
+
+# Librería para serializar modelos (guardar y cargar el Random Forest)
+joblib
