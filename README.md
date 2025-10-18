@@ -1,12 +1,12 @@
-# 🌿 OCKO: Bot de WhatsApp Modular para Monitoreo y Gestión de Pastizales
+# OCKO: Bot de WhatsApp Modular para Monitoreo y Gestión de Pastizales
 
-## 📋 Descripción General
+## Descripción General
 
 Ocko es un chatbot modular diseñado para ofrecer inteligencia de pastizales en tiempo real a través de WhatsApp. Utiliza un **Clasificador Random Forest (Machine Learning)** para predecir el estado de salud del pastizal mediante un sistema de semáforo y opera a través de dos canales IVR completamente separados: **Comuneros** y **Especialistas**.
 
 ---
 
-## 🏗️ Arquitectura del Proyecto
+## Arquitectura del Proyecto
 
 ### Estructura de Directorios
 
@@ -40,7 +40,7 @@ Ocko es un chatbot modular diseñado para ofrecer inteligencia de pastizales en 
 
 ---
 
-## 🚀 Instalación y Configuración
+## Instalación y Configuración
 
 ### Requisitos Previos
 
@@ -128,7 +128,7 @@ El sistema iniciará y cargará los artefactos ML mediante lazy loading, optimiz
 
 ---
 
-## 📱 Canales y Funcionalidades
+## Canales y Funcionalidades
 
 ### Canal: Comuneros
 
@@ -166,7 +166,7 @@ Diseñado para técnicos y expertos en gestión de pastizales.
 
 ---
 
-## 🧠 Sistema de Machine Learning
+## Sistema de Machine Learning
 
 ### Modelo: Random Forest Classifier
 
@@ -245,7 +245,7 @@ Predicciones en Tiempo Real
 
 ---
 
-## 🔒 Seguridad y Buenas Prácticas
+## Seguridad y Buenas Prácticas
 
 - ✅ **Variables de entorno:** Credenciales nunca en código fuente
 - ✅ **Validación de entrada:** Sanitización de datos de usuario
@@ -255,7 +255,7 @@ Predicciones en Tiempo Real
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### El modelo no se encuentra
 
@@ -281,7 +281,7 @@ python -m src.main_webhook
 
 ---
 
-## 📊 Métricas y Monitoreo
+## Métricas y Monitoreo
 
 El sistema registra las siguientes métricas:
 
@@ -293,7 +293,7 @@ El sistema registra las siguientes métricas:
 
 ---
 
-## 🚧 Roadmap
+## Roadmap
 
 ### Fase Actual (v1.0)
 - ✅ Sistema de predicción ML básico
@@ -301,15 +301,15 @@ El sistema registra las siguientes métricas:
 - ✅ Flujos secuenciales de reporte
 
 ### Próximas Mejoras (v2.0)
-- 🔲 Integración con imágenes satelitales
-- 🔲 Dashboard web para especialistas
-- 🔲 Notificaciones proactivas basadas en ML
-- 🔲 Reentrenamiento automático del modelo
-- 🔲 Soporte multiidioma (Quechua/Español)
+- Integración con imágenes satelitales
+- Dashboard web para especialistas
+- Notificaciones proactivas basadas en ML
+- Reentrenamiento automático del modelo
+- Soporte multiidioma (Quechua/Español)
 
 ---
 
-## 👥 Contribución
+## Contribución
 
 Las contribuciones son bienvenidas. Por favor:
 
@@ -321,13 +321,13 @@ Las contribuciones son bienvenidas. Por favor:
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver archivo `LICENSE` para más detalles.
 
 ---
 
-## 📞 Contacto y Soporte
+## Contacto y Soporte
 
 Para preguntas, sugerencias o reportar problemas:
 
@@ -341,4 +341,4 @@ Para preguntas, sugerencias o reportar problemas:
 
 Este proyecto fue desarrollado para apoyar a las comunidades de pastoreo en la gestión sostenible de sus recursos naturales, combinando conocimiento tradicional con tecnología moderna.
 
-**¡Gracias por usar OCKO!** 🌿
+**¡Gracias por usar OCKO!**
