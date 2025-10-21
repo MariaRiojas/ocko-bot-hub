@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCKO APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navegación Principal -->
+    <div class="main-nav">
+        <div class="container">
+            <h1>OCKO APP</h1>
+            <div class="nav-buttons">
+                <button class="btn btn--primary" onclick="showWhatsApp()">📱 WhatsApp Bot</button>
+                <button class="btn btn--secondary" onclick="showDashboard()">📊 Dashboard Especialista</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interface WhatsApp -->
+    <div id="whatsapp-interface" class="interface-container">
+        <div class="whatsapp-container">
+            <div class="whatsapp-header">
+                <div class="header-info">
+                    <div class="avatar">🤖</div>
+                    <div class="contact-info">
+                        <h3>Bot Pastoreo</h3>
+                        <span class="status">En línea</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        ¡Hola! 👋 Soy tu asistente de Ocko App.
+                        <br><br>¿En qué te puedo ayudar hoy?
+                    </div>
+                    <div class="message-time">10:00</div>
+                </div>
+            </div>
+            
+            <div class="chat-input" id="chat-input">
+                <div class="main-menu">
+                    <button class="menu-btn" onclick="consultarEstadoPastos()">🌱 Estado Pastos</button>
+                    <button class="menu-btn" onclick="enviarReporte()">📝 Enviar Reporte</button>
+                    <button class="menu-btn" onclick="consultarClima()">🌤️ Agua/Clima</button>
+                    <button class="menu-btn" onclick="solicitarConsejos()">💡 Consejos</button>
+                    <button class="menu-btn" onclick="reportarEmergencia()">🚨 Emergencia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Especialista -->
+    <div id="dashboard-interface" class="interface-container" style="display: none;">
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <h2>Dashboard Especialista</h2>
+                <div class="header-stats">
+                    <div class="stat-card">
+                        <h4>Reportes Pendientes</h4>
+                        <span class="stat-number">7</span>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Alertas Activas</h4>
+                        <span class="stat-number">3</span>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Precisión Modelo</h4>
+                        <span class="stat-number">87%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="dashboard-section">
+                    <h3>Estado Zonas de Pastoreo</h3>
+                    <div class="zones-grid" id="zones-grid">
+                        <!-- Zones will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="dashboard-section">
+                    <h3>Reportes Recientes</h3>
+                    <div class="reports-list" id="reports-list">
+                        <!-- Reports will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="dashboard-section">
+                    <h3>Métricas del Modelo</h3>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <h4>Precisión</h4>
+                            <div class="metric-value">87%</div>
+                            <div class="metric-change positive">+2.3%</div>
+                        </div>
+                        <div class="metric-card">
+                            <h4>Recall</h4>
+                            <div class="metric-value">82%</div>
+                            <div class="metric-change positive">+1.8%</div>
+                        </div>
+                        <div class="metric-card">
+                            <h4>F1-Score</h4>
+                            <div class="metric-value">84%</div>
+                            <div class="metric-change positive">+2.1%</div>
+                        </div>
+                        <div class="metric-card">
+                            <h4>Predicciones Correctas (30d)</h4>
+                            <div class="metric-value">89</div>
+                            <div class="metric-change positive">+5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-section">
+                    <h3>Acciones Rápidas</h3>
+                    <div class="actions-grid">
+                        <button class="action-btn" onclick="retrainModel()">🔄 Reentrenar Modelo</button>
+                        <button class="action-btn" onclick="validateReports()">✅ Validar Reportes</button>
+                        <button class="action-btn" onclick="updateAdvice()">📚 Actualizar Consejos</button>
+                        <button class="action-btn" onclick="exportData()">📊 Exportar Datos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales y overlays -->
+    <div id="modal-overlay" class="modal-overlay" style="display: none;" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3 id="modal-title">Título</h3>
+                <button class="close-btn" onclick="closeModal()">×</button>
+            </div>
+            <div class="modal-content" id="modal-content">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
