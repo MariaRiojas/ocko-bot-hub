@@ -8,3 +8,4 @@ python-dotenv
 
 # Librería para serializar modelos (guardar y cargar el Random Forest)
 joblib
+h5py
